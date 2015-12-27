@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Spreadsheet Preview</title>
+  <meta name="author" content="Klokan Technologies GmbH">
+  <style type="text/css" media="screen">
+  html, #main {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+  }
+  body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+      color: #393939;
+      background-color: #fff;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.5;
+  }
+  .handsontable table {
+      font-size:90%;
+  }
+  #drop{
+  	border:2px dashed #bbb;
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:10px;
+  	padding:25px;
+  	text-align:center;
+  	font-size:18pt;
+    color:#bbb;
+    line-height:100px;
+    margin:25px;
+  }
+  
+  </style>
+  <script src="xlsx.full.min.js"></script>
+  <script src="handsontable.full.js"></script>
+  <link rel="stylesheet" media="screen" href="handsontable.full.css">
+</head>
+<body>
+  <div id="main">
+  <div id="drop">Drop a spreadsheet XLS / XLSX / ODS file here.<br/><button id="openfile">Open a file</button></div>
+  </div>
+  <script src="main.js" data-main="main" type="text/javascript"></script>
+</body>
+</html>
