@@ -100,8 +100,8 @@ openfile.addEventListener('click', openFile, false);
 
 console.log(launchData);
 
-if (launchData && launchData.items && launchData.items.length > 0) {
-  var entry = launchData.items[0].fileentry;
+if (launchData && launchData.items) {
+  var entry = launchData.items[0].entry;
   // console.log(entry);
   entry.file(openSpreadsheetFile);
 }
